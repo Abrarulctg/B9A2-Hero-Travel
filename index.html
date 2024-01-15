@@ -12,7 +12,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
         rel="stylesheet">
-
+    <!-- Font-Awesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css
+">
     <!-- Custom Css -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -37,15 +39,92 @@
     <!-- Main Section -->
     <main>
         <!-- Banner Section -->
-        <section class="banner">
-            <h1>Explore Your Travel</h1>
-            <p>No matter the reason, travelling opens a big door for us to explore the world beyond our imagination and
-                indulge in many things. </p>
-            <div class="search-box-container">
-                <input type="text" name="to-go" id="">
-                <input type="text" name="time" id="">
-                <input type="text" name="type" id="">
-                <button class="btn-primary"># Find Now</button>
+        <section class="banner-section">
+            <div>
+                <h1 class="banner-title">Explore Your Travel</h1>
+                <p class="banner-description">No matter the reason, travelling opens a big door for us to explore the
+                    world
+                    <br>
+                    beyond our imagination and indulge in many things.
+                </p>
+                <div class="search-box-container">
+                    <input type="text" name="where-go" id="" placeholder="Where go">
+                    <input type="text" name="time" id="" placeholder="When">
+                    <input type="text" name="type" id="" placeholder="Search Type">
+                    <button class="btn-primary"><i class="fa-solid fa-magnifying-glass"> </i> Find Now</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Popular Tours section -->
+        <section class="popular-tour-container">
+            <div>
+                <h1 class="section-title">Our Popular Tours</h1>
+                <p class="section-description">If you're ready to inspire what's next for your students, this is the
+                    perfect place to start.The
+                    majesty of Mount Fuji to the modern metropolis of Tokyo. Your Japan student trip will introduce
+                    you to it all.
+                </p>
+                <ul class="section-description">
+                    <li>This adventure is a beautiful collection of the many shining gems of
+                        Japan. Solis erat at.</li>
+                    <li>We've experienced the transformation power of travel firsthand—and
+                        we can't wait to explore</li>
+                    <li>We believe travel is for everyone. When students go beyond the
+                        classroom it brings education to life, unlocks new potential, and opens a world of
+                        possibilities. </li>
+                </ul>
+                <p class="section-description">
+                    he itineraries in this travel collection are chosen time and time again.Engage all your senses
+                    as you try delicious cuisine, experiment with cutting-edge technology, and take in ancient
+                    wonders of the world on your student trip to Asia.
+                </p>
+                <button class="btn-primary">Read More</button>
+            </div>
+            <img src="./Images/popular-tour.png" alt="">
+        </section>
+
+        <!-- Choose Your Destination Section -->
+        <section class="destination-container">
+            <h1 class="section-title">Choose Your Destination</h1>
+            <p class="section-description">Choose a destination where you want to make a trip. There are some popular
+                places listed below. <br>
+                If you're ready to inspire what's next for your students, these are the perfect place to start.</p>
+            <div class="tour-place-container">
+                <div class="places">
+                    <div>
+                        <img src="./Images/maldive.png" alt="">
+                        <h3 class="tour-place-caption">Maldives</h3>
+                    </div>
+                    <div>
+                        <img src="./Images/indonesia.png" alt="">
+                        <h3 class="tour-place-caption">Indonesia</h3>
+                    </div>
+                </div>
+                <div class="places">
+                    <div>
+                        <img src="./Images/srilanka.png" alt="">
+                        <h3 class="tour-place-caption">Srilanka</h3>
+                    </div>
+                    <div>
+                        <img src="./Images/north-america.png" alt="">
+                        <h3 class="tour-place-caption">North Ameria</h3>
+                    </div>
+                    <div>
+                        <img src="./Images/kashmir.png" alt="">
+                        <h3 class="tour-place-caption">Kashmir</h3>
+                    </div>
+                </div>
+                <div class="places">
+                    <div>
+                        <img src="./Images/bangladesh.png" alt="">
+                        <h3 class="tour-place-caption">Bangladesh</h3>
+                    </div>
+                    <div>
+                        <img src="./Images/bandarban.png" alt="">
+                        <h3 class="tour-place-caption">Banderban</h3>
+                    </div>
+                </div>
             </div>
         </section>
     </main>

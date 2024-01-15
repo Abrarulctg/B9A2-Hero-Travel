@@ -1,5 +1,176 @@
 * {
     font-family: 'Mulish', sans-serif;
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
+    margin: 0;
+}
 
+/* Common Shared Style */
+.btn-primary {
+    padding: 16px 30px;
+    background-color: #FF5400;
+    color: #fff;
+    border-radius: 8px;
+    border: 0;
+}
+
+.btn-primary:hover {
+    background-color: #ff1900;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.section-title {
+    color: #131318;
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.section-description,
+.section-description li {
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 1.5rem;
+}
+
+
+
+/* Header Style */
+header {
+    max-width: 1200px;
+    margin: auto;
+    /* padding: 0 20px; */
+    border: 1px solid red;
+
+}
+
+/* Navigation Menu Style */
+.brand-name {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #424247;
+    font-size: 18px;
+}
+
+/* ==========Main Section Styles========== */
+main {
+    max-width: 1200px;
+    /* display: flex; */
+    margin: auto;
+    border: 1px solid red;
+
+
+}
+
+/* Banner Section Style */
+.banner-section {
+    background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url('./Images/header-banner.png');
+    background-repeat: no-repeat;
+    padding: 105px 185px;
+    text-align: center;
+    margin: 50px auto;
+    /* background-position: center; */
+    /* background-size: cover; */
+    border-radius: 16px;
+
+
+}
+
+.banner-title {
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    padding: 0 115px;
+}
+
+.banner-description {
+    color: #FFF;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    line-height: 26px;
+}
+
+
+.search-box-container {
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+    padding: 16px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.search-box-container input {
+    padding: 16px;
+    border-radius: 8px;
+    border: 0;
+}
+
+
+/* Our Popular Tours section */
+.popular-tour-container {
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px;
+    align-items: center;
+}
+
+.popular-tour-container img {
+    width: 100%;
+}
+
+
+/* Choose Your Destination Style */
+.destination-container {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.tour-place-container {
+    margin: 48px 0;
+    display: grid;
+    gap: 24px;
+    justify-content: center;
+}
+
+.places {
+    display: flex;
+    gap: 24px;
+}
+
+.places div {
+    margin: 0;
+}
+
+.places img {
+    background-image: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url(<path-to-image>), lightgray -101px -108.075px / 135.253% 172.05% no-repeat;
+}
+
+.tour-place-caption {
+    color: #fff;
+    font-size: 1.75rem;
+    font-weight: 800;
+    position: relative;
+    top: -50%;
 }
