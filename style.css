@@ -11,6 +11,7 @@
     color: #fff;
     border-radius: 8px;
     border: 0;
+    font-weight: 800;
 }
 
 .btn-primary:hover {
@@ -24,6 +25,13 @@
     font-size: 2.5rem;
     font-weight: 800;
     margin-bottom: 1.5rem;
+}
+
+.section-subtitle {
+    color: #131318;
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
 }
 
 .section-description,
@@ -180,7 +188,7 @@ main {
 
 
 /* why-choose-us Section */
-.why-choose-us {
+.section-sub-container {
     text-align: center;
     margin: 0 auto;
 }
@@ -221,4 +229,60 @@ main {
 .row {
     width: 100%;
     margin-left: 50%
+}
+
+
+/* deals-discount-section Style */
+.deals-discount-section {
+    margin: 80px 0;
+}
+
+
+/* perfect-place-section Style */
+.perfect-place-section {
+    display: grid;
+    grid-template-columns: repeat(2, 3fr);
+    gap: 40px;
+    justify-content: space-between;
+    /* text-align: center; */
+    margin: 0 auto;
+}
+
+.perfect-place-section li {
+    color: #131318;
+    font-weight: 700;
+}
+
+.youtube-video {
+    width: 610px;
+    height: 424px;
+    border-radius: 12px;
+}
+
+/* newsletter-section Style */
+.newsletter-section {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 24px;
+    margin: 100px auto;
+}
+
+.subscribe-form {
+    border-radius: 16px;
+    border: 1px solid #FF5400;
+    padding: 40px;
+}
+
+.subscribe-form input {
+    padding: 16px 20px;
+    width: 90%;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    border: 0;
+}
+
+.subscribe-form .btn-primary {
+    width: 100%;
+    font-size: 1.25rem;
 }
