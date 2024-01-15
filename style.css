@@ -23,6 +23,7 @@
     color: #131318;
     font-size: 2.5rem;
     font-weight: 800;
+    margin-bottom: 1.5rem;
 }
 
 .section-description,
@@ -144,11 +145,11 @@ main {
 /* Choose Your Destination Style */
 .destination-container {
     text-align: center;
-    margin: 50px 0;
+    margin: 80px 0;
 }
 
 .tour-place-container {
-    margin: 48px 0;
+    margin: 24px 0;
     display: grid;
     gap: 24px;
     justify-content: center;
@@ -164,6 +165,8 @@ main {
 }
 
 .places img {
+    height: 100%;
+    width: 100%;
     background-image: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url(<path-to-image>), lightgray -101px -108.075px / 135.253% 172.05% no-repeat;
 }
 
@@ -173,4 +176,49 @@ main {
     font-weight: 800;
     position: relative;
     top: -50%;
+}
+
+
+/* why-choose-us Section */
+.why-choose-us {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.why-choose-us-card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.why-choose-us-card-container .card {
+    padding: 32px;
+    border-radius: 16px;
+}
+
+.why-choose-us-card-container .card img {
+    width: 64px;
+    margin-bottom: 32px;
+}
+
+.why-choose-us-card-container .card-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.why-choose-us-card-container .card:nth-child(2n-1) {
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+}
+
+.why-choose-us-card-container .card:nth-child(2n) {
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+}
+
+.row {
+    width: 100%;
+    margin-left: 50%
 }
