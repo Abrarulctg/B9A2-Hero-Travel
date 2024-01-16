@@ -446,7 +446,8 @@ select {
 
 
 
-/* ===========Responsive Styel=========== */
+/* ===========Responsive Style=========== */
+/* Small/Mobile Device */
 @media screen and (max-width: 600px) {
 
     nav,
@@ -489,15 +490,16 @@ select {
         gap: 24px;
     }
 
-
     .banner-section {
-        padding: 32px;
+        padding: 30px 32px 30px 32px;
+
     }
 
     .banner-title {
         font-size: 1.5rem;
         font-weight: 800;
         margin-bottom: 1rem;
+        margin-top: 1rem;
     }
 
     .banner-description {
@@ -509,7 +511,6 @@ select {
         padding: 24px;
     }
 
-
     /* Deals & Discount Section Style */
     .deals-discount-section .deals-discount-card-container:nth-child(2n) {
         background-image: url('./Images/deals-discount1.png');
@@ -517,8 +518,6 @@ select {
         background-position: center;
         border-radius: 16px;
     }
-
-
 
     .deals-discount-section .deals-discount-card-container:nth-child(2n - 1) {
         background-size: cover;
@@ -531,7 +530,6 @@ select {
         justify-content: center;
         margin-bottom: 1.5rem;
     }
-
 
     .deals-discount-card {
         border-radius: 16px;
@@ -562,6 +560,35 @@ select {
     .footer-section hr {
         width: 100%;
     }
+}
 
+@media screen and (min-width: 601px) and (max-width: 992px) {
+    body {
+        padding: 16px;
+    }
 
+    .banner-section {
+        padding: 85px 135px;
+    }
+
+    .banner-title {
+        padding: 0 35px;
+    }
+
+    .newsletter-section {
+        gap: 1rem;
+    }
+
+    .subscribe-form {
+        padding: 25px;
+    }
+
+    .subscribe-form input {
+        width: 85%;
+    }
+
+    .search-box-container {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0.9rem;
+    }
 }
