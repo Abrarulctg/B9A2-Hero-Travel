@@ -240,11 +240,75 @@ main {
     margin-left: 50%
 }
 
+/* li:first-child {
+    color: red;
+} */
+
+/* 
+li:nth-child(2n) {
+    color: #fff;
+    background-color: green;
+}
+
+
 
 /* deals-discount-section Style */
 .deals-discount-section {
     margin: 80px 0;
 }
+
+.deals-discount-section .why-choose-us-card-container:nth-child(2n) {
+    /* background-image: url('./Images/deals-discount1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 56px;
+    padding-bottom: 56px;
+    padding-bottom: 56px;
+    padding-right: 56px;
+    display: flex;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: end;
+    margin-bottom: 1.5rem; */
+}
+
+.deals-discount-card-container {
+    background-image: url('./Images/deals-discount1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 56px;
+    padding-bottom: 56px;
+    padding-bottom: 56px;
+    padding-right: 56px;
+    display: flex;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: end;
+    margin-bottom: 1.5rem;
+}
+
+.deals-discount-card {
+    border-radius: 16px;
+    border: 2px solid #fff;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+    padding: 50px;
+    width: calc(100% - 60%);
+
+}
+
+
+.hotel-details {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 26px;
+}
+
+.hotel-price {
+    color: #FF5400;
+    font-size: 1.25rem;
+    font-weight: 800;
+    margin-bottom: 24px;
+}
+
 
 
 /* perfect-place-section Style */
