@@ -89,10 +89,7 @@ nav ul li a {
 /* ==========Main Section Styles========== */
 main {
     max-width: 1200px;
-    /* display: flex; */
     margin: auto;
-
-
 }
 
 /* Banner Section Style */
@@ -312,7 +309,6 @@ select {
     grid-template-columns: repeat(2, 3fr);
     gap: 40px;
     justify-content: space-between;
-    /* text-align: center; */
     margin: 0 auto;
 }
 
@@ -460,6 +456,11 @@ select {
         flex-direction: column;
     }
 
+    nav ul {
+        display: flex;
+        gap: 10px;
+    }
+
     .banner-section {
         background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url('./Images/header-banner.png');
         background-repeat: no-repeat;
@@ -560,6 +561,135 @@ select {
     .footer-section hr {
         width: 100%;
     }
+}
+
+
+/* Medium Device */
+@media screen and (min-width: 601px) and (max-width: 720px) {
+
+    nav,
+    .sponsors-img-container,
+    .newsletter-section,
+    .tour-place-container,
+    .places,
+    .why-choose-us-container,
+    .why-choose-us-card-container {
+        flex-direction: column;
+    }
+
+    .search-box-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-around;
+    }
+
+
+    nav ul {
+        display: flex;
+        gap: 10px;
+    }
+
+    .banner-section {
+        background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url('./Images/header-banner.png');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .newsletter-section {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .newsletter-section-img img {
+        width: 100%;
+    }
+
+    .row {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    .why-choose-us-card-container,
+    .newsletter-section,
+    .popular-tour-container,
+    .deals-discount-section,
+    .deals-discount-card-container {
+        flex-direction: column;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 24px;
+    }
+
+    .banner-section {
+        padding: 30px 32px 30px 32px;
+
+    }
+
+    .banner-title {
+        font-size: 1.5rem;
+        font-weight: 800;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+
+    .banner-description {
+        font-size: 1rem;
+        margin-bottom: 0.9rem;
+    }
+
+    main {
+        padding: 24px;
+    }
+
+    /* Deals & Discount Section Style */
+    .deals-discount-section .deals-discount-card-container:nth-child(2n) {
+        background-image: url('./Images/deals-discount1.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 16px;
+    }
+
+    .deals-discount-section .deals-discount-card-container:nth-child(2n - 1) {
+        background-size: cover;
+        padding-top: 56px;
+        padding-bottom: 56px;
+        padding-right: 50px;
+        padding-left: 0px;
+        display: flex;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        margin-bottom: 1.5rem;
+    }
+
+    .deals-discount-card {
+        border-radius: 16px;
+        border: 2px solid #fff;
+        background: rgba(255, 255, 255, 0.80);
+        backdrop-filter: blur(2.5px);
+        padding: 25px;
+        margin: 220px 25px 25px 25px;
+        width: 90%;
+    }
+
+    /* perfect-place-section Style */
+    .perfect-place-section {
+        flex-direction: column;
+        grid-template-columns: repeat(1, 3fr);
+        gap: 40px;
+    }
+
+    .perfect-place-section li {
+        color: #131318;
+        font-weight: 700;
+    }
+
+    .youtube-video {
+        width: 100%;
+    }
+
+    .footer-section hr {
+        width: 100%;
+    }
+
 }
 
 @media screen and (min-width: 601px) and (max-width: 992px) {
