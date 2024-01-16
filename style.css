@@ -62,9 +62,7 @@
 header {
     max-width: 1200px;
     margin: auto;
-    /* padding: 0 20px; */
-    border: 1px solid red;
-
+    padding-top: 40px;
 }
 
 /* Navigation Menu Style */
@@ -93,7 +91,6 @@ main {
     max-width: 1200px;
     /* display: flex; */
     margin: auto;
-    border: 1px solid red;
 
 
 }
@@ -105,11 +102,7 @@ main {
     padding: 105px 185px;
     text-align: center;
     margin: 50px auto;
-    /* background-position: center; */
-    /* background-size: cover; */
     border-radius: 16px;
-
-
 }
 
 .banner-title {
@@ -179,9 +172,6 @@ select {
     gap: 24px;
 }
 
-.places div {
-    margin: 0;
-}
 
 .places img {
     height: 100%;
@@ -298,7 +288,6 @@ select {
     backdrop-filter: blur(2.5px);
     padding: 50px;
     width: calc(100% - 60%);
-
 }
 
 
@@ -337,6 +326,27 @@ select {
     height: 424px;
     border-radius: 12px;
 }
+
+/* Sponsors Section */
+.sponsors-section {
+    text-align: center;
+    margin: 50px;
+}
+
+.sponsors-img-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+    gap: 20px;
+}
+
+.sponsors-img-container img {
+    width: 165px;
+
+}
+
+
 
 /* newsletter-section Style */
 .newsletter-section {
@@ -398,7 +408,7 @@ select {
 /* Footer Section Style */
 .footer-section {
     background-color: rgba(19, 19, 24, 0.05);
-    padding: 110px 0;
+    padding: 110px 30px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -432,4 +442,118 @@ select {
     font-size: 1rem;
     font-weight: 300;
     margin-top: 50px;
+}
+
+
+
+/* ===========Responsive Styel=========== */
+@media screen and (max-width: 600px) {
+
+    nav,
+    .sponsors-img-container,
+    .newsletter-section,
+    .tour-place-container,
+    .places,
+    .why-choose-us-container,
+    .why-choose-us-card-container {
+        flex-direction: column;
+    }
+
+    .banner-section {
+        background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url('./Images/header-banner.png');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .newsletter-section {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .newsletter-section-img img {
+        width: 100%;
+    }
+
+    .row {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .search-box-container,
+    .why-choose-us-card-container,
+    .newsletter-section,
+    .popular-tour-container,
+    .deals-discount-section,
+    .deals-discount-card-container {
+        flex-direction: column;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 24px;
+    }
+
+
+    .banner-section {
+        padding: 32px;
+    }
+
+    .banner-title {
+        font-size: 1.5rem;
+        font-weight: 800;
+        margin-bottom: 1rem;
+    }
+
+    .banner-description {
+        font-size: 1rem;
+        margin-bottom: 0.9rem;
+    }
+
+    main {
+        padding: 24px;
+    }
+
+
+    /* Deals & Discount Section Style */
+    .deals-discount-section .deals-discount-card-container:nth-child(2n) {
+        background-image: url('./Images/deals-discount1.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 16px;
+    }
+
+    .deals-discount-section .deals-discount-card-container:nth-child(2n - 1) {
+        background-image: url('./Images/deals-discount2.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 16px;
+        margin: 0 auto;
+    }
+
+    .deals-discount-card {
+        border-radius: 16px;
+        border: 2px solid #fff;
+        background: rgba(255, 255, 255, 0.80);
+        backdrop-filter: blur(2.5px);
+        padding: 25px;
+        margin: 180px 20px 20px 20px;
+        width: 90%;
+    }
+
+    /* .deals-discount-card-even {
+        margin: 0 auto;
+    } */
+
+    /* perfect-place-section Style */
+    .perfect-place-section {
+        flex-direction: column;
+        grid-template-columns: repeat(1, 3fr);
+        gap: 40px;
+    }
+
+    .perfect-place-section li {
+        color: #131318;
+        font-weight: 700;
+    }
+
+    .youtube-video {
+        width: 100%;
+    }
+
 }
