@@ -138,10 +138,12 @@ main {
     gap: 24px;
 }
 
-.search-box-container input {
+.search-box-container input[type="text"],
+select {
     padding: 16px;
     border-radius: 8px;
     border: 0;
+    color: rgba(19, 19, 24, 0.50);
 }
 
 
@@ -240,16 +242,6 @@ main {
     margin-left: 50%
 }
 
-/* li:first-child {
-    color: red;
-} */
-
-/* 
-li:nth-child(2n) {
-    color: #fff;
-    background-color: green;
-}
-
 
 
 /* deals-discount-section Style */
@@ -257,21 +249,7 @@ li:nth-child(2n) {
     margin: 80px 0;
 }
 
-.deals-discount-section .why-choose-us-card-container:nth-child(2n) {
-    /* background-image: url('./Images/deals-discount1.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 56px;
-    padding-bottom: 56px;
-    padding-bottom: 56px;
-    padding-right: 56px;
-    display: flex;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: end;
-    margin-bottom: 1.5rem; */
-}
-
-.deals-discount-card-container {
+.deals-discount-section .deals-discount-card-container:nth-child(2n) {
     background-image: url('./Images/deals-discount1.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -284,6 +262,34 @@ li:nth-child(2n) {
     justify-content: end;
     margin-bottom: 1.5rem;
 }
+
+.deals-discount-section .deals-discount-card-container:nth-child(2n - 1) {
+    background-image: url('./Images/deals-discount2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 56px;
+    padding-bottom: 56px;
+    padding-bottom: 56px;
+    padding-left: 56px;
+    display: flex;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: start;
+    margin-bottom: 1.5rem;
+}
+
+/* .deals-discount-card-container {
+    background-image: url('./Images/deals-discount1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 56px;
+    padding-bottom: 56px;
+    padding-bottom: 56px;
+    padding-right: 56px;
+    display: flex;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: end;
+    margin-bottom: 1.5rem;
+} */
 
 .deals-discount-card {
     border-radius: 16px;
